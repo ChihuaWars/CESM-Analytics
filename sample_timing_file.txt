@@ -1,0 +1,57 @@
+---------------- TIMING PROFILE ---------------------
+  Case        : b.e21.BHIST.f09_g17.CMIP6-historical.001
+  LID         : 2979765.chadmin1.181015-050236
+  Machine     : cheyenne
+  Caseroot    : /gpfs/fs1/work/cmip6/cases/b.e21.BHIST.f09_g17.CMIP6-historical.001
+  Timeroot    : /gpfs/fs1/work/cmip6/cases/b.e21.BHIST.f09_g17.CMIP6-historical.001/Tools
+  User        : cmip6
+  Curr Date   : Mon Oct 15 10:01:22 2018
+  grid        : a%0.9x1.25_l%0.9x1.25_oi%gx1v7_r%r05_g%gland4_w%ww3a_m%gx1v7
+  compset     : HIST_CAM60_CLM50%BGC-CROP_CICE_POP2%ECO%ABIO-DIC_MOSART_CISM2%NOEVOLVE_WW3_BGC%BDRD
+  run_type    : hybrid, continue_run = TRUE (inittype = FALSE)
+  stop_option : nyears, stop_n = 5
+  run_length  : 1825 days (1825.0 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride)
+  ---------        ------     -------   ------   ------  ---------  ------
+  cpl = cpl        3456        0        1152   x 3       1      (1     )
+  atm = cam        3456        0        1152   x 3       1      (1     )
+  lnd = clm        2592        0        864    x 3       1      (1     )
+  ice = cice       864         864      288    x 3       1      (1     )
+  ocn = pop        768         1152     256    x 3       1      (1     )
+  rof = mosart     2592        0        864    x 3       1      (1     )
+  glc = cism       3456        0        1152   x 3       1      (1     )
+  wav = ww         96          1408     32     x 3       1      (1     )
+  esp = sesp       1           0        1      x 1       1      (1     )
+
+  total pes active           : 12960
+  mpi tasks per node               : 36
+  pe count for cost estimate : 4320
+
+  Overall Metrics:
+    Model Cost:            4281.03   pe-hrs/simulated_year
+    Model Throughput:        24.22   simulated_years/day
+ 
+    Init Time   :      63.817 seconds
+    Run Time    :   17837.627 seconds        9.774 seconds/day
+    Final Time  :       0.057 seconds
+
+    Actual Ocn Init Wait Time     :    6321.811 seconds
+    Estimated Ocn Init Run Time   :       0.000 seconds
+    Estimated Run Time Correction :       0.000 seconds
+      (This correction has been applied to the ocean and total run times)
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components
+
+    TOT Run Time:   17837.627 seconds        9.774 seconds/mday        24.22 myears/wday
+    CPL Run Time:    1322.051 seconds        0.724 seconds/mday       326.77 myears/wday
+    ATM Run Time:   12381.266 seconds        6.784 seconds/mday        34.89 myears/wday
+    LND Run Time:    3758.067 seconds        2.059 seconds/mday       114.95 myears/wday
+    ICE Run Time:    2377.740 seconds        1.303 seconds/mday       181.69 myears/wday
+    OCN Run Time:   11443.558 seconds        6.270 seconds/mday        37.75 myears/wday
+    ROF Run Time:     276.144 seconds        0.151 seconds/mday      1564.40 myears/wday
+    GLC Run Time:       2.037 seconds        0.001 seconds/mday    212076.58 myears/wday
+    WAV Run Time:    2568.079 seconds        1.407 seconds/mday       168.22 myears/wday
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    CPL COMM Time:  15463.090 seconds        8.473 seconds/mday        27.94 myears/wday
