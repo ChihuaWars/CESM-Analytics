@@ -1,12 +1,12 @@
 # CESM Analytics
 
-This project creates a novel database and calculates usage metrics for CESM, a climate model developed by the National Center for Atmospheric Research (NCAR). This work began under a summer internship through the Summer Internships in Parallel Computing Science (SIParCS) in 2019 by me, Lolita Mannik. This repo was created as a place to share, manage, and continue the project as a thesis required to complete my master's degree in data science from Regis University in Denver. 
+This project creates a novel database and calculates usage metrics for CESM2, a climate model developed by the National Center for Atmospheric Research (NCAR). This work began under a summer internship through the Summer Internships in Parallel Computing Science (SIParCS) in 2019 by me, Lolita Mannik. This repo was created as a place to share, manage, and continue the project as a thesis required to complete my master's degree in data science from Regis University in Denver. 
 
 I’d like to specifically showcase database skills, data cleaning, and statistical and machine learning methods. 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.  
 
 
 ### Built With
@@ -16,9 +16,17 @@ These instructions will get you a copy of the project up and running on your loc
 * This project was run on Windows 10.
 
 ## Directory of Repo Files
-* Practicum Proposal. A complete description of the background for the project and week-byweek outline of steps.
+* Practicum Proposal. A complete description of the background for the project and week-by-week outline of steps.
 * Data Dictionary. Dictionary of features parsed from CESM timing files.
 * sample_timing_file. Look at an original .txt file before it's been parsed.
+* cmip_09_10_2019.json. JSON file containing 6088 timing files from CMIP6 experiments: July 20, 2018 through September 20, 2019.
+* CESM JSON to SQL + Outlier Detection Thesis1.ipynb. Jupyter Notebook (Python) that takes the cmip_09_10_2019.json file, converts to a Pandas dataframe, sets datatypes, removes outliers, and saves the results as df_NoOutlier-Thesis.csv.
+* df-NoOutlier-Thesis.csv. Data file used in CESM Upgrade Analysis Thesis 1.ipynb and ATM Component Analysis Thesis 1.ipynb.
+* CESM Upgrade Analysis Thesis 1.ipynb. Using df_NoOutlier-Thesis.csv created from the CESM JSON to SQL + Outlier Detection Thesis1 notebook, this Jupyter Notebook establishes basic metrics for CMIP6 experiments on CESM2 and analyzes the performance of cases and ensembles before and after a system upgrade on the Cheyenne supercomputer.
+* ATM Component Analysis Thesis 1.ipynb. Using df_NoOutlier-Thesis.csv, this Jupyter Notebook analyzes the performance of the atmospheric component before and after a system upgrade on the Cheyenne supercomputer.
+* Lolita Mannik Practicum I.pptx. Power point presentation for part I of the thesis probject (EDA and upgrade analysis). 
+
+
 
 
 Say what the step will be
@@ -55,9 +63,7 @@ Explain what these tests test and why
 Give an example
 ```
 
-## Deployment
 
-Add additional notes about how to deploy this on a live system
 
 
 ## Contributing
