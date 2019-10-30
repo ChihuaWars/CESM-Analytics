@@ -17,23 +17,23 @@ These instructions will get you a copy of the project up and running on your loc
 ## Prerequisites
 Once Python and Jupyter Notebook are installed, the following Python packages are required:
 
-sqlalchemy 
-json
-pandas
-datetime
+* sqlalchemy 
+* json
+* pandas
+* datetime
 
-numpy 
-scipy.stats
-statsmodels.api
+* numpy 
+* scipy.stats
+* statsmodels.api
 
-matplotlib.pyplot 
-seaborn 
-pylab
-plotly.express
+* matplotlib.pyplot 
+* seaborn 
+* pylab
+* plotly.express
 
 
 ## File Descriptions
-* Practicum Proposal. A complete description of the background for the project and week-by-week outline of steps.
+** Practicum Proposal ** - A complete description of the background for the project and week-by-week outline of steps.
 * Data Dictionary. Dictionary of features parsed from CESM timing files.
 * sample_timing_file. Look at an original .txt file before it's been parsed.
 * cmip_09_10_2019.json. JSON file containing 6088 timing files from CMIP6 experiments: July 20, 2018 through September 20, 2019.
