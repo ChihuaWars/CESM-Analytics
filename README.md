@@ -49,7 +49,7 @@ Once Python and Jupyter Notebook are installed, the following Python packages ar
 
 **ATM Component Analysis Thesis 1.ipynb** - Using df_NoOutlier-Thesis.csv, this Jupyter Notebook analyzes the performance (model cost) of the atmospheric component before and after a system upgrade on the Cheyenne supercomputer. Groups of matching atmospheric component, atmospheric processor count and oceanic processor count are created and analyzed before and after the upgrade. The same testing for normality, performance changes, and statistical significance is performed as in the previous notebook. Again, performance degradation (2 to 19%) for groups with 3,456 atmospheric processors is found. In this analysis, performance degradation (4%) also occured in groups with 1,800 atmospheric processors, although performance improvement (5%) was found in groups with 1080 atmospheric processors.
 
-**Lolita Mannik Practicum I.pptx or .pdf** - Final presentation for submission of part I of the thesis probject (EDA and upgrade analysis). 
+**Lolita Mannik Practicum I.pptx or .pdf** - Final presentation for submission of part I of the thesis project (EDA and upgrade analysis). 
 
 ## Authors
 
