@@ -62,11 +62,11 @@ Once Python and Jupyter Notebook are installed, the following Python packages ar
 
 **CESM Upgrade Results Report.xlsx** - Excel file listing the identifying features found in CESM Upgrade Analysis Machine Learning Thesis 2.ipynb
 
-**df_Glade.csv** - 483,000 CESM timing files were capture and parsed from the Glade directory. This file contains data from 9 years and  are over two dozen machines.
+**df_Glade.csv** - 483,000 CESM timing files were capture and parsed from the Glade directory. This file contains data from 9 years and  are over two dozen machines. (Not available on GitHub. Please contact us for access to the database).
 
 **CESM SQL and EDA Glade Data Thesis 2.ipynb** - CESM timing files were collected by scraping the Glade directory and converting to JSON. (My script (CESM JSON to SQL + Outlier Detection Thesis 1.ipynb) was used to convert the JSON to SQL and write the data out to df_Glade.csv.) This notebook reads df_Glade.csv (483,000 rows), cleans and prepares the data, and writes the data out to df_ML-Thesis2.csv, which is used for machine learning exercises in CESM Predictive Modeling Glade Data Thesis 2.ipynb. This notebook uses public data from 9/19/19.
 
-**df_ML-Thesis2.csv** - Data written out from the preparation in CESM SQL and EDA Glade Data Thesis 2.ipynb. 314,961 rows.
+**df_ML-Thesis2.csv** - Data written out from the preparation in CESM SQL and EDA Glade Data Thesis 2.ipynb. 314,961 rows. (Not available on GitHub. Please contact us for access to the database.)
 
 **CESM Predictive Modeling Glade Data Thesis 2.ipynb** - I have prepared the data for modeling in CESM SQL and EDA Glade Data - Thesis 2.ipynb, and here I read in df_ML-Thesis2.csv (314,961 rows) to see if I can predict the run time of the model. The primary way to assess model performance is by looking at model cost (pe-hours/simulated year), which is calculated by taking the time it takes the model to run (overall run time in seconds (wall clock time)), multiplied by the number of processors used in the simulation (pes), divided by the number of simulated years. Since we know the number of processors and simulated years in the runs (because the scientists designate those), I will predict overall run time (seconds). This notebook uses public data from 9/19/19.
 
